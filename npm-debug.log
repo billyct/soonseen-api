@@ -1,0 +1,386 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'mmmagic' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.4
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json e:\node\soonseen_api\package.json
+6 warn package.json soonseen@0.0.1 No README.md file found!
+7 verbose read json e:\node\soonseen_api\node_modules\mime\package.json
+8 verbose read json e:\node\soonseen_api\node_modules\moment\package.json
+9 verbose read json e:\node\soonseen_api\node_modules\mongoose\package.json
+10 verbose read json e:\node\soonseen_api\node_modules\qiniu\package.json
+11 verbose read json e:\node\soonseen_api\node_modules\restify\package.json
+12 verbose read json e:\node\soonseen_api\node_modules\shortid\package.json
+13 verbose read json e:\node\soonseen_api\node_modules\underscore\package.json
+14 verbose read json e:\node\soonseen_api\node_modules\validator\package.json
+15 verbose from cache e:\node\soonseen_api\package.json
+16 verbose readDependencies using package.json deps
+17 verbose cache add [ 'mmmagic', null ]
+18 verbose cache add name=undefined spec="mmmagic" args=["mmmagic",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'mmmagic',
+19 verbose parsed url   path: 'mmmagic',
+19 verbose parsed url   href: 'mmmagic' }
+20 silly lockFile 2885dd05-mmmagic mmmagic
+21 verbose lock mmmagic C:\Users\billyct\AppData\Roaming\npm-cache\2885dd05-mmmagic.lock
+22 silly lockFile 2885dd05-mmmagic mmmagic
+23 silly lockFile 2885dd05-mmmagic mmmagic
+24 verbose addNamed [ 'mmmagic', '' ]
+25 verbose addNamed [ null, '' ]
+26 silly lockFile 98e6537a-mmmagic mmmagic@
+27 verbose lock mmmagic@ C:\Users\billyct\AppData\Roaming\npm-cache\98e6537a-mmmagic.lock
+28 silly addNameRange { name: 'mmmagic', range: '', hasData: false }
+29 verbose url raw mmmagic
+30 verbose url resolving [ 'https://registry.npmjs.org/', './mmmagic' ]
+31 verbose url resolved https://registry.npmjs.org/mmmagic
+32 info trying registry request attempt 1 at 22:21:36
+33 verbose etag "B8TBBTKEYAH8GRET4GO7YEYLS"
+34 http GET https://registry.npmjs.org/mmmagic
+35 http 304 https://registry.npmjs.org/mmmagic
+36 silly registry.get cb [ 304,
+36 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+36 silly registry.get     etag: '"B8TBBTKEYAH8GRET4GO7YEYLS"',
+36 silly registry.get     date: 'Sat, 06 Jul 2013 14:21:37 GMT',
+36 silly registry.get     'content-length': '0' } ]
+37 verbose etag mmmagic from cache
+38 silly addNameRange number 2 { name: 'mmmagic', range: '', hasData: true }
+39 silly addNameRange versions [ 'mmmagic',
+39 silly addNameRange   [ '0.0.1',
+39 silly addNameRange     '0.0.2',
+39 silly addNameRange     '0.1.0',
+39 silly addNameRange     '0.1.1',
+39 silly addNameRange     '0.1.2',
+39 silly addNameRange     '0.2.0',
+39 silly addNameRange     '0.2.1',
+39 silly addNameRange     '0.2.5',
+39 silly addNameRange     '0.3.0',
+39 silly addNameRange     '0.3.1' ] ]
+40 verbose addNamed [ 'mmmagic', '0.3.1' ]
+41 verbose addNamed [ '0.3.1', '0.3.1' ]
+42 silly lockFile beb8f92b-mmmagic-0-3-1 mmmagic@0.3.1
+43 verbose lock mmmagic@0.3.1 C:\Users\billyct\AppData\Roaming\npm-cache\beb8f92b-mmmagic-0-3-1.lock
+44 verbose read json C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package\package.json
+45 silly lockFile beb8f92b-mmmagic-0-3-1 mmmagic@0.3.1
+46 silly lockFile beb8f92b-mmmagic-0-3-1 mmmagic@0.3.1
+47 silly lockFile 98e6537a-mmmagic mmmagic@
+48 silly lockFile 98e6537a-mmmagic mmmagic@
+49 silly resolved [ { name: 'mmmagic',
+49 silly resolved     version: '0.3.1',
+49 silly resolved     author: { name: 'Brian White', email: 'mscdex@mscdex.net' },
+49 silly resolved     description: 'An async libmagic binding for node.js for detecting content types by data inspection',
+49 silly resolved     main: './index',
+49 silly resolved     scripts: { install: 'node-gyp rebuild' },
+49 silly resolved     engines: { node: '>=0.6.0' },
+49 silly resolved     keywords: [ 'magic', 'libmagic', 'file', 'filetype', 'mime', 'mimetype' ],
+49 silly resolved     licenses: [ [Object] ],
+49 silly resolved     repository: { type: 'git', url: 'http://github.com/mscdex/mmmagic.git' },
+49 silly resolved     gypfile: true,
+49 silly resolved     readme: '\nDescription\n===========\n\nAn async libmagic binding for [node.js](http://nodejs.org/) for detecting content types by data inspection.\n\n\nRequirements\n============\n\n* [node.js](http://nodejs.org/) -- v0.6.0 or newer\n\n\nInstall\n============\n\nnpm install mmmagic\n\n\nExamples\n========\n\n* Get general description of a file:\n```javascript\n  var Magic = require(\'mmmagic\').Magic;\n\n  var magic = new Magic();\n  magic.detectFile(\'node_modules/mmmagic/build/Release/magic.node\', function(err, result) {\n      if (err) throw err;\n      console.log(result);\n      // output on Windows with 32-bit node:\n      //    PE32 executable (DLL) (GUI) Intel 80386, for MS Windows\n  });\n```\n* Get mime type for a file:\n```javascript\n  var mmm = require(\'mmmagic\'),\n      Magic = mmm.Magic;\n\n  var magic = new Magic(mmm.MAGIC_MIME_TYPE);\n  magic.detectFile(\'node_modules/mmmagic/build/Release/magic.node\', function(err, result) {\n      if (err) throw err;\n      console.log(result);\n      // output on Windows with 32-bit node:\n      //    application/x-dosexec\n  });\n```\n* Get mime type and mime encoding for a file:\n```javascript\n  var mmm = require(\'mmmagic\'),\n      Magic = mmm.Magic;\n\n  var magic = new Magic(mmm.MAGIC_MIME_TYPE | mmm.MAGIC_MIME_ENCODING);\n  // the above flags can also be shortened down to just: mmm.MAGIC_MIME\n  magic.detectFile(\'node_modules/mmmagic/build/Release/magic.node\', function(err, result) {\n      if (err) throw err;\n      console.log(result);\n      // output on Windows with 32-bit node:\n      //    application/x-dosexec; charset=binary\n  });\n```\n* Get general description of the contents of a Buffer:\n```javascript\n  var Magic = require(\'mmmagic\').Magic;\n\n  var magic = new Magic(),\n        buf = new Buffer(\'import Options\\nfrom os import unlink, symlink\');\n  \n  magic.detect(buf, function(err, result) {\n      if (err) throw err;\n      console.log(result);\n      // output: Python script, ASCII text executable\n  });\n```\n\nAPI\n===\n\nMagic methods\n-------------\n\n* **(constructor)**([< _String_ >magicPath][, < _Integer_ >flags]) - Creates and returns a new Magic instance. magicPath is an optional path string that points to a particular magic file to use. If magicPath is not a string and not false, the bundled magic file will be used. If magicPath is false, mmmagic will default to searching for a magic file to use (order of magic file searching: `MAGIC` env var -> various file system paths (see `man file`)). flags is a bitmask with the following valid values (available as constants on require(\'mmmagic\')):\n\n    * **MAGIC\\_NONE** - No flags set\n    * **MAGIC\\_DEBUG** - Turn on debugging\n    * **MAGIC\\_SYMLINK** - Follow symlinks **(default for non-Windows)**\n    * **MAGIC\\_DEVICES** - Look at the contents of devices\n    * **MAGIC\\_MIME_TYPE** - Return the MIME type\n    * **MAGIC\\_CONTINUE** - Return all matches\n    * **MAGIC\\_CHECK** - Print warnings to stderr\n    * **MAGIC\\_PRESERVE\\_ATIME** - Restore access time on exit\n    * **MAGIC\\_RAW** - Don\'t translate unprintable chars\n    * **MAGIC\\_MIME\\_ENCODING** - Return the MIME encoding\n    * **MAGIC\\_MIME** - (**MAGIC\\_MIME\\_TYPE** | **MAGIC\\_MIME\\_ENCODING**)\n    * **MAGIC\\_APPLE** - Return the Apple creator and type\n    * **MAGIC\\_NO\\_CHECK\\_TAR** - Don\'t check for tar files\n    * **MAGIC\\_NO\\_CHECK\\_SOFT** - Don\'t check magic entries\n    * **MAGIC\\_NO\\_CHECK\\_APPTYPE** - Don\'t check application type\n    * **MAGIC\\_NO\\_CHECK\\_ELF** - Don\'t check for elf details\n    * **MAGIC\\_NO\\_CHECK\\_TEXT** - Don\'t check for text files\n    * **MAGIC\\_NO\\_CHECK\\_CDF** - Don\'t check for cdf files\n    * **MAGIC\\_NO\\_CHECK\\_TOKENS** - Don\'t check tokens\n    * **MAGIC\\_NO\\_CHECK\\_ENCODING** - Don\'t check text encodings\n\n* **detectFile**(< _String_ >path, < _Function_ >callback) - _(void)_ - Inspects the file pointed at by path. The callback receives two arguments: an < _Error_ > object in case of error (null otherwise), and a < _String_ > containing the result of the inspection.\n\n* **detect**(< _Buffer_ >data, < _Function_ >callback) - _(void)_ - Inspects the contents of data. The callback receives two arguments: an < _Error_ > object in case of error (null otherwise), and a < _String_ > containing the result of the inspection.\n',
+49 silly resolved     readmeFilename: 'README.md',
+49 silly resolved     _id: 'mmmagic@0.3.1',
+49 silly resolved     _from: 'mmmagic@' } ]
+50 info install mmmagic@0.3.1 into e:\node\soonseen_api
+51 info installOne mmmagic@0.3.1
+52 verbose from cache C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package\package.json
+53 info e:\node\soonseen_api\node_modules\mmmagic unbuild
+54 verbose read json e:\node\soonseen_api\node_modules\mmmagic\package.json
+55 verbose tar unpack C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package.tgz
+56 silly lockFile 9e47db03-oonseen-api-node-modules-mmmagic e:\node\soonseen_api\node_modules\mmmagic
+57 verbose lock e:\node\soonseen_api\node_modules\mmmagic C:\Users\billyct\AppData\Roaming\npm-cache\9e47db03-oonseen-api-node-modules-mmmagic.lock
+58 silly lockFile fa3a97f9--cache-mmmagic-0-3-1-package-tgz C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package.tgz
+59 verbose lock C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package.tgz C:\Users\billyct\AppData\Roaming\npm-cache\fa3a97f9--cache-mmmagic-0-3-1-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+65 silly gunzTarPerm extractEntry LICENSE
+66 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+67 silly gunzTarPerm extractEntry index.js
+68 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+69 silly gunzTarPerm extractEntry binding.gyp
+70 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+71 silly gunzTarPerm extractEntry deps/libmagic/README
+72 silly gunzTarPerm modified mode [ 'deps/libmagic/README', 438, 420 ]
+73 silly gunzTarPerm extractEntry deps/libmagic/MAINT
+74 silly gunzTarPerm modified mode [ 'deps/libmagic/MAINT', 438, 420 ]
+75 silly gunzTarPerm extractEntry deps/libmagic/config/freebsd/config.h
+76 silly gunzTarPerm modified mode [ 'deps/libmagic/config/freebsd/config.h', 438, 420 ]
+77 silly gunzTarPerm extractEntry deps/libmagic/config/linux/config.h
+78 silly gunzTarPerm modified mode [ 'deps/libmagic/config/linux/config.h', 438, 420 ]
+79 silly gunzTarPerm extractEntry deps/libmagic/config/mac/config.h
+80 silly gunzTarPerm modified mode [ 'deps/libmagic/config/mac/config.h', 438, 420 ]
+81 silly gunzTarPerm extractEntry deps/libmagic/config/win/config.h
+82 silly gunzTarPerm modified mode [ 'deps/libmagic/config/win/config.h', 438, 420 ]
+83 silly gunzTarPerm extractEntry deps/libmagic/COPYING
+84 silly gunzTarPerm modified mode [ 'deps/libmagic/COPYING', 438, 420 ]
+85 silly gunzTarPerm extractEntry deps/libmagic/INSTALL
+86 silly gunzTarPerm modified mode [ 'deps/libmagic/INSTALL', 438, 420 ]
+87 silly gunzTarPerm extractEntry deps/libmagic/libmagic.gyp
+88 silly gunzTarPerm modified mode [ 'deps/libmagic/libmagic.gyp', 438, 420 ]
+89 silly gunzTarPerm extractEntry deps/libmagic/ChangeLog
+90 silly gunzTarPerm modified mode [ 'deps/libmagic/ChangeLog', 438, 420 ]
+91 silly gunzTarPerm extractEntry deps/libmagic/msvc/dirent.h
+92 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/dirent.h', 438, 420 ]
+93 silly gunzTarPerm extractEntry deps/libmagic/msvc/inttypes.h
+94 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/inttypes.h', 438, 420 ]
+95 silly gunzTarPerm extractEntry deps/libmagic/msvc/stdint.h
+96 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/stdint.h', 438, 420 ]
+97 silly gunzTarPerm extractEntry deps/libmagic/NEWS
+98 silly gunzTarPerm modified mode [ 'deps/libmagic/NEWS', 438, 420 ]
+99 silly gunzTarPerm extractEntry deps/libmagic/pcre/README
+100 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/README', 438, 420 ]
+101 silly gunzTarPerm extractEntry deps/libmagic/pcre/LICENCE
+102 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/LICENCE', 438, 420 ]
+103 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_fullinfo.c
+104 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_fullinfo.c', 438, 420 ]
+105 silly gunzTarPerm extractEntry deps/libmagic/pcre/COPYING
+106 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/COPYING', 438, 420 ]
+107 silly gunzTarPerm extractEntry deps/libmagic/pcre/HACKING
+108 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/HACKING', 438, 420 ]
+109 silly gunzTarPerm extractEntry deps/libmagic/pcre/INSTALL
+110 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/INSTALL', 438, 420 ]
+111 silly gunzTarPerm extractEntry deps/libmagic/pcre/AUTHORS
+112 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/AUTHORS', 438, 420 ]
+113 silly gunzTarPerm extractEntry deps/libmagic/pcre/NEWS
+114 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NEWS', 438, 420 ]
+115 silly gunzTarPerm extractEntry deps/libmagic/pcre/NON-AUTOTOOLS-BUILD
+116 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NON-AUTOTOOLS-BUILD', 438, 420 ]
+117 silly gunzTarPerm extractEntry deps/libmagic/pcre/NON-UNIX-USE
+118 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NON-UNIX-USE', 438, 420 ]
+119 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre.gyp
+120 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre.gyp', 438, 420 ]
+121 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre.h
+122 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre.h', 438, 420 ]
+123 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcreposix.c
+124 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcreposix.c', 438, 420 ]
+125 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcreposix.h
+126 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcreposix.h', 438, 420 ]
+127 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_byte_order.c
+128 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_byte_order.c', 438, 420 ]
+129 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_chartables.c
+130 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_chartables.c', 438, 420 ]
+131 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_compile.c
+132 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_compile.c', 438, 420 ]
+133 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_config.c
+134 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_config.c', 438, 420 ]
+135 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_dfa_exec.c
+136 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_dfa_exec.c', 438, 420 ]
+137 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_exec.c
+138 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_exec.c', 438, 420 ]
+139 silly gunzTarPerm extractEntry deps/libmagic/pcre/ChangeLog
+140 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/ChangeLog', 438, 420 ]
+141 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_get.c
+142 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_get.c', 438, 420 ]
+143 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_globals.c
+144 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_globals.c', 438, 420 ]
+145 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_internal.h
+146 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_internal.h', 438, 420 ]
+147 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_jit_compile.c
+148 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_jit_compile.c', 438, 420 ]
+149 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_maketables.c
+150 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_maketables.c', 438, 420 ]
+151 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_newline.c
+152 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_newline.c', 438, 420 ]
+153 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_ord2utf8.c
+154 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_ord2utf8.c', 438, 420 ]
+155 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_printint.c
+156 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_printint.c', 438, 420 ]
+157 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_refcount.c
+158 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_refcount.c', 438, 420 ]
+159 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_string_utils.c
+160 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_string_utils.c', 438, 420 ]
+161 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_study.c
+162 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_study.c', 438, 420 ]
+163 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_tables.c
+164 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_tables.c', 438, 420 ]
+165 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_ucd.c
+166 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_ucd.c', 438, 420 ]
+167 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_valid_utf8.c
+168 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_valid_utf8.c', 438, 420 ]
+169 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_version.c
+170 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_version.c', 438, 420 ]
+171 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_xclass.c
+172 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_xclass.c', 438, 420 ]
+173 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/linux/config.h
+174 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/linux/config.h', 438, 420 ]
+175 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/mac/config.h
+176 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/mac/config.h', 438, 420 ]
+177 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/win/config.h
+178 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/win/config.h', 438, 420 ]
+179 silly gunzTarPerm extractEntry deps/libmagic/pcre/regex.h
+180 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/regex.h', 438, 420 ]
+181 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_32.c
+182 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_32.c', 438, 420 ]
+183 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitConfig.h
+184 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitConfig.h', 438, 420 ]
+185 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitExecAllocator.c
+186 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitExecAllocator.c', 438, 420 ]
+187 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitLir.c
+188 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitLir.c', 438, 420 ]
+189 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitLir.h
+190 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitLir.h', 438, 420 ]
+191 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeARM_Thumb2.c
+192 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeARM_Thumb2.c', 438, 420 ]
+193 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeARM_v5.c
+194 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeARM_v5.c', 438, 420 ]
+195 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeMIPS_32.c
+196 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeMIPS_32.c', 438, 420 ]
+197 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeMIPS_common.c
+198 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeMIPS_common.c', 438, 420 ]
+199 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitConfigInternal.h
+200 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitConfigInternal.h', 438, 420 ]
+201 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_64.c
+202 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_64.c', 438, 420 ]
+203 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_common.c
+204 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_common.c', 438, 420 ]
+205 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeSPARC_32.c
+206 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeSPARC_32.c', 438, 420 ]
+207 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeSPARC_common.c
+208 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeSPARC_common.c',
+208 silly gunzTarPerm   438,
+208 silly gunzTarPerm   420 ]
+209 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_32.c
+210 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_32.c', 438, 420 ]
+211 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_64.c
+212 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_64.c', 438, 420 ]
+213 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_common.c
+214 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_common.c', 438, 420 ]
+215 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitUtils.c
+216 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitUtils.c', 438, 420 ]
+217 silly gunzTarPerm extractEntry deps/libmagic/pcre/ucp.h
+218 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/ucp.h', 438, 420 ]
+219 silly gunzTarPerm extractEntry deps/libmagic/AUTHORS
+220 silly gunzTarPerm modified mode [ 'deps/libmagic/AUTHORS', 438, 420 ]
+221 silly gunzTarPerm extractEntry deps/libmagic/src/funcs.c
+222 silly gunzTarPerm modified mode [ 'deps/libmagic/src/funcs.c', 438, 420 ]
+223 silly gunzTarPerm extractEntry deps/libmagic/src/apprentice.c
+224 silly gunzTarPerm modified mode [ 'deps/libmagic/src/apprentice.c', 438, 420 ]
+225 silly gunzTarPerm extractEntry deps/libmagic/src/ascmagic.c
+226 silly gunzTarPerm modified mode [ 'deps/libmagic/src/ascmagic.c', 438, 420 ]
+227 silly gunzTarPerm extractEntry deps/libmagic/src/asctime_r.c
+228 silly gunzTarPerm modified mode [ 'deps/libmagic/src/asctime_r.c', 438, 420 ]
+229 silly gunzTarPerm extractEntry deps/libmagic/src/asprintf.c
+230 silly gunzTarPerm modified mode [ 'deps/libmagic/src/asprintf.c', 438, 420 ]
+231 silly gunzTarPerm extractEntry deps/libmagic/src/BNF
+232 silly gunzTarPerm modified mode [ 'deps/libmagic/src/BNF', 438, 420 ]
+233 silly gunzTarPerm extractEntry deps/libmagic/src/cdf.c
+234 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf.c', 438, 420 ]
+235 silly gunzTarPerm extractEntry deps/libmagic/src/cdf.h
+236 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf.h', 438, 420 ]
+237 silly gunzTarPerm extractEntry deps/libmagic/src/cdf_time.c
+238 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf_time.c', 438, 420 ]
+239 silly gunzTarPerm extractEntry deps/libmagic/src/compress.c
+240 silly gunzTarPerm modified mode [ 'deps/libmagic/src/compress.c', 438, 420 ]
+241 silly gunzTarPerm extractEntry deps/libmagic/src/ctime_r.c
+242 silly gunzTarPerm modified mode [ 'deps/libmagic/src/ctime_r.c', 438, 420 ]
+243 silly gunzTarPerm extractEntry deps/libmagic/src/elfclass.h
+244 silly gunzTarPerm modified mode [ 'deps/libmagic/src/elfclass.h', 438, 420 ]
+245 silly gunzTarPerm extractEntry deps/libmagic/src/encoding.c
+246 silly gunzTarPerm modified mode [ 'deps/libmagic/src/encoding.c', 438, 420 ]
+247 silly gunzTarPerm extractEntry deps/libmagic/src/file.c
+248 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file.c', 438, 420 ]
+249 silly gunzTarPerm extractEntry deps/libmagic/src/file.h
+250 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file.h', 438, 420 ]
+251 silly gunzTarPerm extractEntry deps/libmagic/src/file_opts.h
+252 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file_opts.h', 438, 420 ]
+253 silly gunzTarPerm extractEntry deps/libmagic/src/fsmagic.c
+254 silly gunzTarPerm modified mode [ 'deps/libmagic/src/fsmagic.c', 438, 420 ]
+255 silly gunzTarPerm extractEntry deps/libmagic/src/apptype.c
+256 silly gunzTarPerm modified mode [ 'deps/libmagic/src/apptype.c', 438, 420 ]
+257 silly gunzTarPerm extractEntry deps/libmagic/src/getline.c
+258 silly gunzTarPerm modified mode [ 'deps/libmagic/src/getline.c', 438, 420 ]
+259 silly gunzTarPerm extractEntry deps/libmagic/src/getopt_long.c
+260 silly gunzTarPerm modified mode [ 'deps/libmagic/src/getopt_long.c', 438, 420 ]
+261 silly gunzTarPerm extractEntry deps/libmagic/src/is_tar.c
+262 silly gunzTarPerm modified mode [ 'deps/libmagic/src/is_tar.c', 438, 420 ]
+263 silly gunzTarPerm extractEntry deps/libmagic/src/magic.c
+264 silly gunzTarPerm modified mode [ 'deps/libmagic/src/magic.c', 438, 420 ]
+265 silly gunzTarPerm extractEntry deps/libmagic/src/magic.h
+266 silly gunzTarPerm modified mode [ 'deps/libmagic/src/magic.h', 438, 420 ]
+267 silly gunzTarPerm extractEntry deps/libmagic/src/mygetopt.h
+268 silly gunzTarPerm modified mode [ 'deps/libmagic/src/mygetopt.h', 438, 420 ]
+269 silly gunzTarPerm extractEntry deps/libmagic/src/pread.c
+270 silly gunzTarPerm modified mode [ 'deps/libmagic/src/pread.c', 438, 420 ]
+271 silly gunzTarPerm extractEntry deps/libmagic/src/print.c
+272 silly gunzTarPerm modified mode [ 'deps/libmagic/src/print.c', 438, 420 ]
+273 silly gunzTarPerm extractEntry deps/libmagic/src/readcdf.c
+274 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readcdf.c', 438, 420 ]
+275 silly gunzTarPerm extractEntry deps/libmagic/src/readelf.c
+276 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readelf.c', 438, 420 ]
+277 silly gunzTarPerm extractEntry deps/libmagic/src/readelf.h
+278 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readelf.h', 438, 420 ]
+279 silly gunzTarPerm extractEntry deps/libmagic/src/softmagic.c
+280 silly gunzTarPerm modified mode [ 'deps/libmagic/src/softmagic.c', 438, 420 ]
+281 silly gunzTarPerm extractEntry deps/libmagic/src/strlcat.c
+282 silly gunzTarPerm modified mode [ 'deps/libmagic/src/strlcat.c', 438, 420 ]
+283 silly gunzTarPerm extractEntry deps/libmagic/src/strlcpy.c
+284 silly gunzTarPerm modified mode [ 'deps/libmagic/src/strlcpy.c', 438, 420 ]
+285 silly gunzTarPerm extractEntry deps/libmagic/src/tar.h
+286 silly gunzTarPerm modified mode [ 'deps/libmagic/src/tar.h', 438, 420 ]
+287 silly gunzTarPerm extractEntry deps/libmagic/src/vasprintf.c
+288 silly gunzTarPerm modified mode [ 'deps/libmagic/src/vasprintf.c', 438, 420 ]
+289 silly gunzTarPerm extractEntry deps/libmagic/TODO
+290 silly gunzTarPerm modified mode [ 'deps/libmagic/TODO', 438, 420 ]
+291 silly gunzTarPerm extractEntry magic/magic.mgc
+292 silly gunzTarPerm modified mode [ 'magic/magic.mgc', 438, 420 ]
+293 silly gunzTarPerm extractEntry src/magic.cc
+294 silly gunzTarPerm modified mode [ 'src/magic.cc', 438, 420 ]
+295 verbose read json e:\node\soonseen_api\node_modules\mmmagic\package.json
+296 silly lockFile 9e47db03-oonseen-api-node-modules-mmmagic e:\node\soonseen_api\node_modules\mmmagic
+297 silly lockFile 9e47db03-oonseen-api-node-modules-mmmagic e:\node\soonseen_api\node_modules\mmmagic
+298 silly lockFile fa3a97f9--cache-mmmagic-0-3-1-package-tgz C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package.tgz
+299 silly lockFile fa3a97f9--cache-mmmagic-0-3-1-package-tgz C:\Users\billyct\AppData\Roaming\npm-cache\mmmagic\0.3.1\package.tgz
+300 info preinstall mmmagic@0.3.1
+301 verbose from cache e:\node\soonseen_api\node_modules\mmmagic\package.json
+302 verbose readDependencies using package.json deps
+303 verbose from cache e:\node\soonseen_api\node_modules\mmmagic\package.json
+304 verbose readDependencies using package.json deps
+305 silly resolved []
+306 verbose about to build e:\node\soonseen_api\node_modules\mmmagic
+307 info build e:\node\soonseen_api\node_modules\mmmagic
+308 verbose from cache e:\node\soonseen_api\node_modules\mmmagic\package.json
+309 verbose linkStuff [ false, false, false, 'e:\\node\\soonseen_api\\node_modules' ]
+310 info linkStuff mmmagic@0.3.1
+311 verbose linkBins mmmagic@0.3.1
+312 verbose linkMans mmmagic@0.3.1
+313 verbose rebuildBundles mmmagic@0.3.1
+314 info install mmmagic@0.3.1
+315 verbose unsafe-perm in lifecycle true
+316 silly exec cmd "/c" "node-gyp rebuild"
+317 silly cmd,/c,node-gyp rebuild,e:\node\soonseen_api\node_modules\mmmagic spawning
+318 info mmmagic@0.3.1 Failed to exec install script
+319 info e:\node\soonseen_api\node_modules\mmmagic unbuild
+320 verbose from cache e:\node\soonseen_api\node_modules\mmmagic\package.json
+321 info preuninstall mmmagic@0.3.1
+322 info uninstall mmmagic@0.3.1
+323 verbose true,e:\node\soonseen_api\node_modules,e:\node\soonseen_api\node_modules unbuild mmmagic@0.3.1
+324 info postuninstall mmmagic@0.3.1
+325 error mmmagic@0.3.1 install: `node-gyp rebuild`
+325 error `cmd "/c" "node-gyp rebuild"` failed with 1
+326 error Failed at the mmmagic@0.3.1 install script.
+326 error This is most likely a problem with the mmmagic package,
+326 error not with npm itself.
+326 error Tell the author that this fails on your system:
+326 error     node-gyp rebuild
+326 error You can get their info via:
+326 error     npm owner ls mmmagic
+326 error There is likely additional logging output above.
+327 error System Windows_NT 6.1.7600
+328 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "mmmagic"
+329 error cwd e:\node\soonseen_api
+330 error node -v v0.10.4
+331 error npm -v 1.2.18
+332 error code ELIFECYCLE
+333 verbose exit [ 1, true ]

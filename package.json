@@ -1,0 +1,12 @@
+{
+    "name": "soonseen", 
+    "version": "0.0.1", 
+    "private": true, 
+    "dependencies": {
+    	"mongoose":"",
+    	"validator" : "",
+    	"restify" : "",
+    	"bcrypt" : "",
+    	"shortid" : ""
+  	}
+}
